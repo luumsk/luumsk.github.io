@@ -13,6 +13,22 @@
             padding: 0;
             box-sizing: border-box;
             font-family: monospace;
+            color: #495464;
+        }
+
+        .line {
+            background-image: linear-gradient(90deg, #495464 2px, transparent 0);
+            background-repeat: repeat-x;
+            background-size: 6px 1px;
+            flex: none;
+            height: 1px;
+            margin-top: 2.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 30px;
         }
     </style>
 </head>
@@ -26,11 +42,12 @@
             https://colorhunt.co/palette/f4f4f2e8e8e8bbbfca495464
          -->
     <div class="container mx-auto xl:flex min-h-screen">
-        <div class="xl:w-1/4 p-10 bg-[#F4F4F2] text-[#495464]">
-            <img class="w-1/3 rounded-full mx-auto mb-10" src="img/profile_picture.jpeg" />
+        <!-- left -->
+        <div class="xl:w-1/4 p-10 xl:p-20 bg-[#F4F4F2] text-[#495464]">
+            <img class="w-3/4 rounded-full mx-auto mb-10" src="img/profile_picture.jpeg" />
             <h1 class="text-center text-xl">Luu Minh Sao Khue</h1>
 
-            <div class="border-b border-dotted my-10 border-[#495464]"></div>
+            <div class="line"></div>
 
             <div class="flex mb-3">
                 <div class="w-4 mr-2">
@@ -55,9 +72,86 @@
                 <a href="https://www.linkedin.com/in/lmsk/" target="_blank">lmsk</a>
             </div>
         </div>
-        <div class="xl:w-3/4 p-10">
-            Hello World!
+        <!-- end left -->
+
+        <!-- right  -->
+        <div class="xl:w-3/4 p-10 xl:p-20">
+            <div>
+                <h2 class="text-base mb-5 uppercase">Bio</h2>
+                <p>I have worked on research and development projects in both academia and industry for the past three
+                    years using the Python programming language. I have participated in machine learning projects where
+                    I wrote Python code to manipulate data and used Pytorch framework for developing algorithms as well
+                    as testing results. I also have a master’s degree in Applied Mathematics and Informatics. In this
+                    master’s program, I learned fundamental concepts in machine learning. My research interest is about
+                    applying machine learning in biomedical and genomic data analysis because I am motivated by science
+                    that brings value to society. I believe that artificial intelligence, or any form of intelligence,
+                    should be dedicated to improving human health, and I want my work to contribute to this mission.</p>
+            </div>
+
+            <div class="line my-20"></div>
+
+            <div>
+                <h2 class="text-base mb-5 uppercase">Education</h2>
+                <p class="">MSc. Applied Mathematics & Informatics</p>
+                <p>Novosirbirsk State University, Russia</p>
+            </div>
+
+            <div class="line my-20"></div>
+
+            <div>
+                <h2 class="text-base mb-5 uppercase">Publications</h2>
+
+                <a href="https://ieeexplore.ieee.org/document/9865366" target="_blank"
+                    class="block xl:flex mb-5 hover:underline">
+                    <p class="mr-10">[1]</p>
+                    <p class="break-words">M. S. K. Luu and E. Pavlovskiy, “Improving Brain Tumor Multiclass
+                        Classification With Semantic Features,” in 2022 Ural-Siberian Conference on Computational
+                        Technologies in Cognitive Science, Genomics and Biomedicine (CSGB), Jul. 2022, pp. 150–154. doi:
+                        10.1109/CSGB56354.2022.9865366.</p>
+                </a>
+
+                <a href="https://link.springer.com/chapter/10.1007/978-3-031-08999-2_35" target="_blank"
+                    class="block xl:flex mb-5 hover:underline">
+                    <p class="mr-10">[2]</p>
+                    <p class="break-words">M. S. K. Luu and E. Pavlovskiy, “Cascaded Training Pipeline for 3D Brain
+                        Tumor Segmentation,” 2022, pp. 410–420. doi: 10.1007/978-3-031-08999-2_35.</p>
+                </a>
+
+                <a href="https://link.springer.com/chapter/10.1007/978-981-33-6757-9_38" target="_blank"
+                    class="block xl:flex mb-5 hover:underline">
+                    <p class="mr-10">[3]</p>
+                    <p class="break-words">T. C. Pham, A. Doucet, T. T. Bui, M. S. K. Luu, D. A Mai, C. M. Luong, “A New
+                        Feature Selection and Classification Approach for Optimizing Breast Cancer Subtyping Based on
+                        Gene Expression,” 2021, pp. 298–307. doi: 10.1007/978-981-33-6757-9_38.</p>
+                </a>
+
+                <a href="https://ieeexplore.ieee.org/document/9237778" target="_blank"
+                    class="block xl:flex mb-5 hover:underline">
+                    <p class="mr-10">[4]</p>
+                    <p class="break-words">T. C. Pham, V. D. Hoang, M. S. K. Luu, D. A. Mai, C. Mai. Luong, “Improving
+                        binary skin cancer classification based on best model selection method combined with optimizing
+                        full connected layers of Deep CNN,” in 2020 International Conference on Multimedia Analysis and
+                        Pattern Recognition (MAPR), Oct. 2020, pp. 1–6. doi: 10.1109/MAPR49794.2020.9237778.</p>
+                </a>
+            </div>
+
+            <div class="line my-20"></div>
+
+            <div>
+                <h2 class="text-base mb-5 uppercase">Certificates</h2>
+                <a href="https://verify.openedg.org/" target="_blank" class="block xl:flex hover:underline">
+                    <p>PCAP - Certified Associate in Python Programming</p>
+                </a>
+                <p class="mb-5">(Certification code: 2Mtr.lcn5.30bW)</p>
+
+                <a href="https://www.coursera.org/account/accomplishments/professional-cert/UZTPWZ9GV6C5"
+                    target="_blank" class="block xl:flex mb-5 hover:underline">
+                    <p>IBM Data Science Professional Certificate</p>
+                </a>
+            </div>
+
         </div>
+        <!-- end right -->
     </div>
 </body>
 
