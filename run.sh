@@ -1,5 +1,6 @@
 cd /Volumes/KHUE1TB/projects/luumsk.github.io
-bundle exec jekyll serve --livereload --drafts
+# serve with drafts
+# bundle exec jekyll serve --livereload --drafts
 
 # without the flag
-# bundle exec jekyll serve --livereload
+bundle exec jekyll serve --livereload
