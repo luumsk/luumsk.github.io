@@ -111,6 +111,9 @@ section[id] { scroll-margin-top: 72px; }
 .btn svg { width: 18px; height: 18px; fill: currentColor; }
 .btn.filled { background: var(--primary); border-color: var(--primary); color: var(--on-filled); }
 .btn.filled:hover { box-shadow: var(--shadow); background: var(--primary); }
+.btn.icon { width: 40px; padding: 0; justify-content: center; }
+.btn.icon svg { width: 20px; height: 20px; }
+.btn.icon .ms { font-size: 20px; }
 
 /* ---------- Stats ---------- */
 .stats { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; padding: 8px 0 24px; }
