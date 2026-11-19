@@ -22,7 +22,7 @@ feed:
 defaults:
   - scope: { path: "" }
     values:
-      image: /profile_picture.JPG
+      image: /assets/img/profile_picture.JPG
   - scope: { path: "", type: posts }
     values:
       layout: post
