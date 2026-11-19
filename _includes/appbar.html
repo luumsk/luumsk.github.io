@@ -1,0 +1,13 @@
+  <header class="appbar">
+    <div class="wrap">
+      <a class="brand" href="/"><img class="logo" src="/favicon.svg" alt="" width="32" height="32" />Luu Minh Sao Khue</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/#news">News</a>
+        <a href="/#research">Research</a>
+        <a href="/#publications">Publications</a>
+        {% if site.posts.size > 0 %}<a href="/blog/"{% if page.layout == "post" or page.url == "/blog/" %} class="active"{% endif %}>Blog</a>{% endif %}
+        <a href="/#experience">Experience</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+    </div>
+  </header>

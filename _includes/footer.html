@@ -1,0 +1,27 @@
+  <footer id="contact">
+    <div class="wrap">
+      <div>
+        <h2>Let's collaborate</h2>
+        <p>Open to research collaborations on agentic AI, LLM reliability, and medical imaging.</p>
+      </div>
+      <div class="actions" style="margin-top:0">
+        <a class="btn filled js-email" href="#contact" data-u="luumsk" data-d="gmail" data-t="com"><span class="ms">mail</span>Email me</a>
+        {% if site.scholar_url and site.scholar_url != "" %}<a class="btn" href="{{ site.scholar_url }}" target="_blank" rel="noopener">Google Scholar</a>{% endif %}
+        <a class="btn" href="https://github.com/luumsk" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/lmsk" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://www.researchgate.net/profile/Minh-Sao-Khue-Luu" target="_blank" rel="noopener">ResearchGate</a>
+        {% if site.posts.size > 0 %}<a class="btn" href="/blog/feed.xml"><span class="ms">rss_feed</span>RSS</a>{% endif %}
+      </div>
+    </div>
+    <div class="wrap copy">© <span id="y">{{ site.time | date: "%Y" }}</span> Luu Minh Sao Khue</div>
+  </footer>
+  <script>
+    // Build the mailto link only on click, so the address never appears in the page source.
+    document.querySelectorAll('.js-email').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        var d = a.dataset;
+        window.location.href = 'mai' + 'lto:' + d.u + '@' + d.d + '.' + d.t;
+      });
+    });
+  </script>

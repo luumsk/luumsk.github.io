@@ -1,0 +1,18 @@
+# Newest first. `text` may contain HTML. The first 3 are shown; the rest go under "Show more".
+# Add a line whenever something happens: paper accepted, talk given, review service, award, release.
+- date: "Nov 2026"
+  text: 'Deep learning MGMT methylation prediction in glioblastoma, benchmark vs. real-world performance, published in <a href="https://doi.org/10.1007/s10143-026-04566-6" target="_blank" rel="noopener">Neurosurgical Review</a>.'
+- date: "Oct 2026"
+  text: 'New preprint: why brain MRI foundation models fail across datasets. <a href="https://arxiv.org/abs/2610.13027" target="_blank" rel="noopener">arXiv:2610.13027</a>'
+- date: "Sep 2026"
+  text: 'State software registration (Russian Federation) for our AI computer-vision system for remote diagnosis and monitoring.'
+- date: "Aug 2026"
+  text: 'Glioblastoma MRI dataset with expert-validated segmentation and MGMT profiling published in <a href="https://doi.org/10.1038/s41597-026-07953-2" target="_blank" rel="noopener">Scientific Data</a>.'
+- date: "May 2026"
+  text: '<a href="https://arxiv.org/abs/2510.00023" target="_blank" rel="noopener">ToolBrain</a>, an RL framework for agentic tool use, at the AAMAS 2026 Demo Track in Paphos, Cyprus.'
+- date: "Apr 2026"
+  text: 'New preprint on component-adaptive, lesion-level supervision for small-structure segmentation. <a href="https://arxiv.org/abs/2604.08015" target="_blank" rel="noopener">arXiv:2604.08015</a>'
+- date: "Jan 2026"
+  text: 'Brain MRI foundation model with dynamic modality integration at <a href="https://doi.org/10.1609/aaai.v40i48.42245" target="_blank" rel="noopener">AAAI-26</a> (Student Abstract), Singapore.'
+- date: "Dec 2025"
+  text: 'Review of public brain MRI datasets for foundation models published in <a href="https://doi.org/10.3390/jimaging11120454" target="_blank" rel="noopener">Journal of Imaging</a>.'

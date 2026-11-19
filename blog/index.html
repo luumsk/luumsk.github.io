@@ -1,0 +1,41 @@
+---
+layout: null
+title: Blog
+description: Notes on multi-agent systems, LLM reasoning, AI oversight, and medical AI by Luu Minh Sao Khue.
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include head-common.html %}
+  {% seo %}
+</head>
+<body>
+{% include appbar.html %}
+
+  <main class="wrap">
+    <section class="section" style="border-top:0; padding-top:48px">
+      <div class="section-head">
+        <h2>Blog</h2>
+        <p>Paper explainers, research notes, and tutorials · <a href="/blog/feed.xml">RSS</a></p>
+      </div>
+      {% if site.posts.size > 0 %}
+      <ul class="post-list">
+        {% for post in site.posts %}
+        <li>
+          <div class="date">{{ post.date | date: "%-d %b %Y" }}</div>
+          <div>
+            <a class="ttl" href="{{ post.url }}">{{ post.title }}</a>
+            <p>{{ post.description | default: post.excerpt | strip_html | truncate: 200 }}</p>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p class="empty">TBA</p>
+      {% endif %}
+    </section>
+  </main>
+
+{% include footer.html %}
+</body>
+</html>

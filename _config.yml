@@ -1,3 +1,32 @@
-theme: jekyll-theme-minimal
 title: "Luu Minh Sao Khue"
 description: "PhD candidate and AI researcher: multi-agent systems, LLM reasoning, AI oversight, self-improving AI, and medical AI."
+url: "https://luumsk.github.io"
+author: "Luu Minh Sao Khue"
+lang: en
+timezone: Asia/Novosibirsk
+
+# Paste your Google Scholar profile URL here, e.g.
+# https://scholar.google.com/citations?user=XXXXXXXXXXXX
+# The Scholar buttons stay hidden until this is filled in.
+scholar_url: "https://scholar.google.com/citations?user=6Jzlw1QAAAAJ"
+
+# Blog
+permalink: /blog/:year/:title/
+excerpt_separator: "<!--more-->"
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+feed:
+  path: blog/feed.xml
+
+defaults:
+  - scope: { path: "" }
+    values:
+      image: /profile_picture.JPG
+  - scope: { path: "", type: posts }
+    values:
+      layout: post
+
+exclude:
+  - README.md
+  - .DS_Store

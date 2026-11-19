@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include head-common.html %}
+  {% seo %}
+</head>
+<body>
+{% include appbar.html %}
+
+  <main class="wrap">
+    <article class="article">
+      <a class="back" href="/blog/"><span class="ms">arrow_back</span>All posts</a>
+      <h1>{{ page.title }}</h1>
+      <div class="byline">
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
+        <span>·</span>
+        <span>{{ content | number_of_words | divided_by: 200 | plus: 1 }} min read</span>
+        {% for tag in page.tags %}<span class="chip outline">{{ tag }}</span>{% endfor %}
+      </div>
+      <div class="prose">
+{{ content }}
+      </div>
+      <div class="share">
+        Share:
+        <a class="btn" href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | url_encode }}" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://x.com/intent/post?url={{ page.url | absolute_url | url_encode }}&text={{ page.title | url_encode }}" target="_blank" rel="noopener">X</a>
+        {% capture bsky %}{{ page.title }} {{ page.url | absolute_url }}{% endcapture %}
+        <a class="btn" href="https://bsky.app/intent/compose?text={{ bsky | url_encode }}" target="_blank" rel="noopener">Bluesky</a>
+      </div>
+    </article>
+  </main>
+
+{% include footer.html %}
+</body>
+</html>
